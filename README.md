@@ -30,3 +30,12 @@ grep -Re "[0-9a-zA-Z]{16}"
 grep -Re "[0-9a-zA-Z]{18,25}"
 grep -Re "[0-9a-zA-Z]{35,44}"
 
+
+Using Waybackurls:
+go get github.com/tomnomnom/waybackurls
+waybackurls internet.org | grep "\.js" | uniq | sort
+
+
+Ref:
+https://blog.appsecco.com/static-analysis-of-client-side-javascript-for-pen-testers-and-bug-bounty-hunters-f1cb1a5d5288
+
